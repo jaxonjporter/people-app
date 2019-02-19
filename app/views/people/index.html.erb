@@ -1,0 +1,7 @@
+<h1> Hello </h1>
+
+<% @people.each do |person| %>
+  <h2><%= person.name %></h2>
+  <%= link_to 'See Profile', person_path(person) %>
+  
+<% end %>
